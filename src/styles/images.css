@@ -1,0 +1,24 @@
+.img-150 {
+    width: 150px;
+}
+.img-80 {
+    width: 80px;
+}
+.img-60 {
+    width: 60px;
+}
+.img-30 {
+    width: 30px;
+}
+.img-invert-1 {
+    filter: invert(1);
+}
+.img-border-10 {
+    border-radius: 10px;
+}
+.img-invert {
+    filter: invert(1);
+}
+.img-a:hover {
+    opacity: 0.5;
+}

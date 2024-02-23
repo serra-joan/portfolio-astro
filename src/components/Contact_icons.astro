@@ -1,0 +1,27 @@
+---
+import '../styles/images.css'
+---
+
+<div class="d-flex">
+    <a href="https://www.linkedin.com/in/joanserrafreixas/" class="icon-push" target="_blank">
+        <img src="/images/icons/linkedin.svg" class="img-30 img-invert-1" alt="Linkedin">
+    </a>
+    <a href="mailto:info@serrajoan.com" class="ms-2 icon-push">
+        <img src="/images/icons/mail.svg" class="img-invert-1" style="width: 27px; margin-top: 1.9px;" alt="Mail">
+    </a>
+</div>
+
+<style>
+    .icon-container {
+        width: 30px;
+    }
+    .icon-container a {
+        width: 100%;
+    }
+    .icon-push {
+        transition: transform 0.3s ease-in-out;
+    }
+    .icon-push:hover {
+        transform: scale(1.1);
+    }
+</style>
