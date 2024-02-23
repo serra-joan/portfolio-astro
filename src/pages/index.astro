@@ -1,34 +1,21 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Contact_icons from '../components/Contact_icons.astro';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Layout from '../layouts/Layout.astro';
+import Title from '../layouts/Title.astro';
+
+import TitleSection from '../components/TitleSection.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-       <!-- Title -->
         <div class="container-md">
-            <div class="row align-items-center">
+            <Title />
 
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
-                    <h1>Desarrollador Full Stack</h1>
-                    <p>
-                        Soy Joan Serra, desarrollador web con un enfoque práctico y eficiente. Mi trabajo se centra en construir sitios web funcionales y bien estructurados.
-                        Priorizo la claridad y la eficiencia en cada proyecto, asegurando resultados sólidos y profesionales.
-                    </p>
-
-                    <Contact_icons />
-                </div>
-
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
-                    <div class="d-flex justify-content-center">
-                        <img src="/images/profile.jpeg" class="rounded-4" alt="Profile image.">
-                    </div>
-                </div>
-
-            </div>
+            <TitleSection
+                    title = "Mis proyectos"
+            />
         </div>
-       <!-- end: Title -->
 	</main>
 </Layout>
 

@@ -1,0 +1,17 @@
+---
+interface Props {
+    title: string;
+}
+const { title } = Astro.props;
+---
+
+<div class="subsection-title">
+    <h2 class="text-uppercase">{title}</h2>
+</div>
+
+<style>
+    .subsection-title {
+        margin-top: 5rem;
+        border-bottom: 3px solid var(--primary);
+    }
+</style>
