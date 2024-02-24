@@ -2,30 +2,32 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from '../layouts/Layout.astro';
-import Title from '../layouts/Title.astro';
+import HeadLine from '../layouts/Title.astro';
+import Footer from '../layouts/Footer.astro';
 
-import TitleSection from '../components/TitleSection.astro';
+import TitleSection from '../components/HeadLine.astro';
 import Card from '../components/Card.astro';
 import CardLarge from '../components/CardLarge.astro';
+import CardSmall from '../components/CardSmall.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
         <div class="container-md">
-            <Title />
+            <HeadLine />
 
             <!-- Projects -->
             <TitleSection
-                title = "Mis proyectos"
+                title="Mis proyectos"
             />
 
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
                     <Card
-                        title = "MÁS Real Estate"
-                        image = "/images/my-projects/mas-logo.svg"
-                        projectLink = "https://masrealestate.es/"
-                        content = "Web dedicada al alquiler, compra e inversión de viviendas de lujo. Desarrollada con las tecnologías front-end HTML, CSS y JavaScript y respaldada por un backend en PHP conectado a una base de datos SQL. Cuenta con una interfaz administrativa para gestionar el contenido de la web de manera eficiente y dinámica."
+                        title="MÁS Real Estate"
+                        image="/images/my-projects/mas-logo.svg"
+                        projectLink="https://masrealestate.es/"
+                        content="Web dedicada al alquiler, compra e inversión de viviendas de lujo. Desarrollada con las tecnologías front-end HTML, CSS y JavaScript y respaldada por un backend en PHP conectado a una base de datos SQL. Cuenta con una interfaz administrativa para gestionar el contenido de la web de manera eficiente y dinámica."
                     />
                 </div>
 
@@ -34,36 +36,83 @@ import CardLarge from '../components/CardLarge.astro';
 
             <!-- Experience -->
             <TitleSection
-                    title = "Mi experiencia"
+                    title="Mi experiencia"
             />
 
                 <!-- Devinet -->
             <CardLarge
-                    imageWidth = 80
-                    imageHeight = 80
-                    dateRange = "2022 - Actualidad"
-                    image = "/images/experience/devinet.svg"
-                    content = "Desarrollador Full Stack en Devinet. Experto en tecnologías clave como CodeIgniter 4, HTML, JavaScript, PHP, SQL y Git. Responsable de optimizar y dar vida a diversas aplicaciones web, transformando requisitos en soluciones digitales eficientes y vanguardistas. Además, destacado por un trato directo y eficaz con los clientes, asegurando que sus necesidades y expectativas se cumplan a la perfección."
+                    imageWidth=80
+                    imageHeight=80
+                    dateRange="2022 - Actualidad"
+                    image="/images/experience/devinet.svg"
+                    content="Desarrollador Full Stack en Devinet. Experto en tecnologías clave como CodeIgniter 4, HTML, JavaScript, PHP, SQL y Git. Responsable de optimizar y dar vida a diversas aplicaciones web, transformando requisitos en soluciones digitales eficientes y vanguardistas. Además, destacado por un trato directo y eficaz con los clientes, asegurando que sus necesidades y expectativas se cumplan a la perfección."
             />
 
                 <!-- isWolk -->
             <CardLarge
-                    imageWidth = 140
-                    imageHeight = 140
-                    dateRange = "2021 - 2022"
-                    image = "/images/experience/iswolk.png"
-                    content = "Desarrollador Full Stack en IsWolk. Con habilidades en tecnologías esenciales como CodeIgniter 4, HTML, JavaScript, PHP y Git. Desempeñé un papel crucial ayudando a mantener diversas páginas web, garantizando su óptimo funcionamiento y adaptándolas a las necesidades cambiantes."
+                    imageWidth=140
+                    imageHeight=140
+                    dateRange="2021 - 2022"
+                    image="/images/experience/iswolk.png"
+                    content="Desarrollador Full Stack en IsWolk. Con habilidades en tecnologías esenciales como CodeIgniter 4, HTML, JavaScript, PHP y Git. Desempeñé un papel crucial ayudando a mantener diversas páginas web, garantizando su óptimo funcionamiento y adaptándolas a las necesidades cambiantes."
             />
             <!-- end: Experience -->
 
             <!-- Knowledge -->
             <TitleSection
-                    title = "Conocimientos"
+                    title="Conocimientos"
             />
-            <!-- end: Knowledge -->
 
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <CardSmall
+                            name="PHP"
+                            image="/images/knowledge/php.svg"
+                    />
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <CardSmall
+                            name="CodeIgniter 4"
+                            image="/images/knowledge/cedeigniter.svg"
+                    />
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <CardSmall
+                            name="Java Script"
+                            image="/images/knowledge/js.svg"
+                    />
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <CardSmall
+                            name="CSS"
+                            image="/images/knowledge/css.svg"
+                    />
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <CardSmall
+                            name="HTML5"
+                            image="/images/knowledge/html5.svg"
+                    />
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <CardSmall
+                            name="SQL"
+                            image="/images/knowledge/sql.svg"
+                    />
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <CardSmall
+                            name="Git - GitHub - Bitbucket"
+                            image="/images/knowledge/git.svg"
+                    />
+                </div>
+            </div>
+            <!-- end: Knowledge -->
         </div>
 	</main>
+
+    <Footer />
+
 </Layout>
 
 <style>

@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+    image: string
+    name: string
+}
+
+const { image, name } = Astro.props;
+---
+
+<div class="my-card-small">
+    <div class="d-flex align-items-center p-2">
+        <div class="flex-shrink-0">
+            <Image
+                src={image}
+                width="50"
+                height="50"
+                alt={name}
+            />
+        </div>
+
+        <div class="flex-grow-1 ms-3">
+            <p class="m-0">{name}</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .my-card-small {
+        color: #000;
+        width: auto;
+        height: 100px;
+        padding: 10px;
+        display: flex;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        align-content: center;
+        background-color: var(--bg-card);
+    }
+    .my-card-small img {
+        max-width: 3rem;
+        width: 10vw;
+    }
+</style>
