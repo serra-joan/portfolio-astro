@@ -1,0 +1,48 @@
+---
+import { Image, raw } from 'astro:assets';
+
+interface Props {
+    image: string;
+    title: string;
+    content: string;
+    projectLink: string;
+}
+
+const { image, title, content, projectLink } = Astro.props;
+---
+
+<div class="my-card">
+    <div class="my-card-image m-2">
+        <Image src={image}  class="img-150" alt="Logo project" width="150" height="100" />
+    </div>
+
+    <div class="p-3">
+        <h3>{title}
+            <a href={projectLink} class="ms-3 img-a" target="_blank">
+                <Image src="/images/icons/link.svg"  class="img-invert mb-2" alt="Link project" width="20" height="20" />
+            </a>
+        </h3>
+
+        <p>{content}</p>
+    </div>
+</div>
+
+<style>
+    :root {
+        --bg-card: #e8e8e8;
+    }
+    .my-card {
+        color: #000;
+        height: 100%;
+        border-radius: 10px;
+        background-color: var(--bg-card);
+    }
+    .my-card-image {
+        max-height: 200px;
+    }
+    .my-card img {
+        height: auto;
+        max-width: 100%;
+    }
+</style>
+

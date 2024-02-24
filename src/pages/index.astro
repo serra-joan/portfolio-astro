@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout.astro';
 import Title from '../layouts/Title.astro';
 
 import TitleSection from '../components/TitleSection.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,9 +13,24 @@ import TitleSection from '../components/TitleSection.astro';
         <div class="container-md">
             <Title />
 
+            <!-- Projects -->
             <TitleSection
-                    title = "Mis proyectos"
+                title = "Mis proyectos"
             />
+
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+                    <Card
+                        title = "MÁS Real Estate"
+                        image = "/images/my-projects/mas-logo.svg"
+                        projectLink = "https://masrealestate.es/"
+                        content = "Web dedicada al alquiler, compra e inversión de viviendas de lujo. Desarrollada con las tecnologías front-end HTML, CSS y JavaScript y respaldada por un backend en PHP conectado a una base de datos SQL. Cuenta con una interfaz administrativa para gestionar el contenido de la web de manera eficiente y dinámica."
+                    />
+                </div>
+
+            </div>
+            <!-- end: Projects -->
+
         </div>
 	</main>
 </Layout>
