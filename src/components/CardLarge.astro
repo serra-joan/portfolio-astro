@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+    image: string;
+    content: string;
+    dateRange: string;
+    imageWidth: number;
+    imageHeight: number;
+}
+
+const { image, dateRange, content, imageWidth, imageHeight } = Astro.props;
+---
+
+<div class="my-card-large">
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-6 col-12 py-2 px-4">
+            <Image
+                    src = {image}
+                    class = "img-fluid img-border-10"
+                    alt = "Devinet"
+                    width = {imageWidth}
+                    height = {imageHeight}
+            />
+        </div>
+        <div class="col-xl-10 col-lg-10 col-md-6 col-12 py-2 px-4">
+            <strong>{dateRange}</strong>
+            <p>{content}</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .my-card-large {
+        color: #000;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        background-color: var(--bg-card);
+    }
+</style>

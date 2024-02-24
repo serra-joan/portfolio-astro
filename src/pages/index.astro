@@ -6,6 +6,7 @@ import Title from '../layouts/Title.astro';
 
 import TitleSection from '../components/TitleSection.astro';
 import Card from '../components/Card.astro';
+import CardLarge from '../components/CardLarge.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -30,6 +31,36 @@ import Card from '../components/Card.astro';
 
             </div>
             <!-- end: Projects -->
+
+            <!-- Experience -->
+            <TitleSection
+                    title = "Mi experiencia"
+            />
+
+                <!-- Devinet -->
+            <CardLarge
+                    imageWidth = 80
+                    imageHeight = 80
+                    dateRange = "2022 - Actualidad"
+                    image = "/images/experience/devinet.svg"
+                    content = "Desarrollador Full Stack en Devinet. Experto en tecnologías clave como CodeIgniter 4, HTML, JavaScript, PHP, SQL y Git. Responsable de optimizar y dar vida a diversas aplicaciones web, transformando requisitos en soluciones digitales eficientes y vanguardistas. Además, destacado por un trato directo y eficaz con los clientes, asegurando que sus necesidades y expectativas se cumplan a la perfección."
+            />
+
+                <!-- isWolk -->
+            <CardLarge
+                    imageWidth = 140
+                    imageHeight = 140
+                    dateRange = "2021 - 2022"
+                    image = "/images/experience/iswolk.png"
+                    content = "Desarrollador Full Stack en IsWolk. Con habilidades en tecnologías esenciales como CodeIgniter 4, HTML, JavaScript, PHP y Git. Desempeñé un papel crucial ayudando a mantener diversas páginas web, garantizando su óptimo funcionamiento y adaptándolas a las necesidades cambiantes."
+            />
+            <!-- end: Experience -->
+
+            <!-- Knowledge -->
+            <TitleSection
+                    title = "Conocimientos"
+            />
+            <!-- end: Knowledge -->
 
         </div>
 	</main>
