@@ -4,32 +4,60 @@ import ContactIcons from "../components/ContactIcons.astro";
 ---
 
 <div class="container-md">
-    <div class="row align-items-center">
+    <div class="d-none d-xl-block d-lg-block">
+        <div class="row align-items-center">
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 mt-5">
+                <div class="">
+                    <Image
+                        src="/images/profile.webp"
+                        class="rounded"
+                        alt="Profile image"
+                        width="370"
+                        height="400"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
 
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
-            <h1 class="font-size-h1-plus">Desarrollador</h1>
-            <h1 class="font-size-h1-plus">Full Stack</h1>
-            <p>
-                Soy Joan Serra, desarrollador web con un enfoque práctico y eficiente. Mi trabajo se centra en construir sitios web funcionales y bien estructurados.
-                Priorizo la claridad y la eficiencia en cada proyecto, asegurando resultados sólidos y profesionales.
-            </p>
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 mt-5">
+                <h1 class="font-size-h1-plus">Joan Serra</h1>
+                <h2>Desarrollador Web Freelance</h2>
+                <p>
+                    Con un enfoque práctico y eficiente. Mi trabajo se centra en construir sitios web funcionales y bien estructurados.
+                    Priorizo la claridad y la eficiencia en cada proyecto, asegurando resultados sólidos y profesionales.
+                </p>
 
-            <ContactIcons />
-        </div>
-
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
-            <div class="d-flex justify-content-center">
-                <Image
-                    src="/images/profile.webp"
-                    class="rounded"
-                    alt="Profile image"
-                    width="370"
-                    height="400"
-                    loading="lazy"
-                />
+                <ContactIcons />
             </div>
         </div>
+    </div>
 
+    <div class="d-block d-xl-none d-lg-none">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                <h1 class="font-size-h1-plus">Joan Serra</h1>
+                <h2>Desarrollador Web Freelance</h2>
+                <p>
+                    Con un enfoque práctico y eficiente. Mi trabajo se centra en construir sitios web funcionales y bien estructurados.
+                    Priorizo la claridad y la eficiencia en cada proyecto, asegurando resultados sólidos y profesionales.
+                </p>
+
+                <ContactIcons />
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                <div class="d-flex justify-content-center">
+                    <Image
+                            src="/images/profile.webp"
+                            class="rounded"
+                            alt="Profile image"
+                            width="370"
+                            height="400"
+                            loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -37,5 +65,8 @@ import ContactIcons from "../components/ContactIcons.astro";
 <style>
     .font-size-h1-plus {
         font-size: calc(1.8rem + 1.5vw);
+    }
+    .color-primary {
+        color: var(--primary) !important;
     }
 </style>
