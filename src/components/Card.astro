@@ -12,23 +12,23 @@ const { image, title, content, projectLink } = Astro.props;
 ---
 
 <div class="my-card">
-    <div class="my-card-image m-2">
+    <div class="my-card-image m-2 mb-0">
         <Image
                 src={image}
-                class="img-150"
+                class="img-invert"
                 alt="Logo project"
-                width="150"
-                height="100"
+                width="200"
+                height="150"
                 loading="lazy"
         />
     </div>
 
-    <div class="p-3">
+    <div class="p-3 pt-0">
         <h3>{title}
             <a href={projectLink} class="ms-3 img-a" target="_blank">
                 <Image
                         src="/images/icons/link.svg"
-                        class="img-invert mb-2"
+                        class="mb-2"
                         alt="Link project"
                         width="20"
                         height="20"
@@ -45,10 +45,13 @@ const { image, title, content, projectLink } = Astro.props;
         --bg-card: #e8e8e8;
     }
     .my-card {
-        color: #000;
+        color: var(--bg-card);
         height: 100%;
         border-radius: 10px;
-        background-color: var(--bg-card);
+        border: 1px solid transparent;
+    }
+    .my-card:hover {
+        border: 1px solid #d3d3d3;
     }
     .my-card-image {
         max-height: 200px;

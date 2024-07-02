@@ -14,7 +14,7 @@ const { image, dateRange, content, imageWidth, imageHeight } = Astro.props;
 
 <div class="my-card-large">
     <div class="row">
-        <div class="col-xl-2 col-lg-2 col-md-2 col-12 py-2 px-4 mt-2">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-12 py-2 ps-4 me-0 mt-2">
             <Image
                     src={image}
                     class="img-fluid img-border-10"
@@ -24,7 +24,7 @@ const { image, dateRange, content, imageWidth, imageHeight } = Astro.props;
                     loading="lazy"
             />
         </div>
-        <div class="col-xl-10 col-lg-10 col-md-10 col-12 py-2 px-4 mt-2">
+        <div class="col-xl-10 col-lg-10 col-md-10 col-12 py-2 pe-4 ms-0 mt-2">
             <strong>{dateRange}</strong>
             <p>{content}</p>
         </div>
@@ -33,12 +33,11 @@ const { image, dateRange, content, imageWidth, imageHeight } = Astro.props;
 
 <style>
     .my-card-large {
-        color: #000;
+        color: var(--bg-card);
         width: 100%;
         height: 100%;
         border-radius: 10px;
         margin-bottom: 1rem;
         min-height: 130px;
-        background-color: var(--bg-card);
     }
 </style>
