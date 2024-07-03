@@ -20,8 +20,8 @@ jobs:
 
       - name: Copy files to VPS
         run: |
-          scp -r ./* ${{ secrets.SSH_USER }}@${{ SSH_IP }}:/var/www/html/portfolio
+          scp -r ./* ${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}:/var/www/html/portfolio
 
       - name: Build project
         run: |
-          ssh ${{ secrets.SSH_USER }}@${{ SSH_IP }} "cd /var/www/html/portfolio && npm install && npm run build"
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }} "cd /var/www/html/portfolio && npm install && npm run build"
