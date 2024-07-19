@@ -32,7 +32,7 @@ import CardSmall from '@src/components/CardSmall.astro';
                         imageHeight=80
                         dateRange="2022 - 2024"
                         image="/images/experience/devinet.svg"
-                        content="Mi enfoque se centra en presentar y ejecutar soluciones que impacten positivamente en los usuarios, siempre trabajando en estrecha colaboración con los clientes para asegurar que sus necesidades y expectativas sean cumplidas a la perfección."
+                        content="Mi enfoque se centraba en presentar y ejecutar soluciones que impactaran positivamente en los usuarios, siempre trabajando en estrecha colaboración con los clientes para asegurar que sus necesidades y expectativas fueran cumplidas a la perfección."
                 />
             </div>
 
@@ -57,14 +57,15 @@ import CardSmall from '@src/components/CardSmall.astro';
 
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 mb-3">
-                    <Card
-                        title="MÁS Real Estate"
-                        image="/images/my-projects/mas-logo.svg"
-                        projectLink="https://masrealestate.es/"
-                        content="Web dedicada al alquiler, compra e inversión de viviendas de lujo. También cuenta con una interfaz administrativa para gestionar el contenido de la web de manera eficiente y dinámica."
-                    />
+                    <a href="https://masrealestate.es/" target="_blank">
+                        <Card
+                                title="MÁS Real Estate"
+                                image="/images/my-projects/mas-logo.svg"
+                                projectLink="https://masrealestate.es/"
+                                content="Web dedicada al alquiler, compra e inversión de viviendas de lujo. También cuenta con una interfaz administrativa para gestionar el contenido de la web de manera eficiente y dinámica."
+                        />
+                    </a>
                 </div>
-
             </div>
             <!-- end: Projects -->
 
@@ -138,7 +139,8 @@ import CardSmall from '@src/components/CardSmall.astro';
         background-color: var(--bg-principal);
     }
     a {
-        color: transparent;
+        text-decoration: none;
+        color: var(--txt-principal-color);
     }
     h1 {
         font-size: calc(1.8rem + 1.5vw);

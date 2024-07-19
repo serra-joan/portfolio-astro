@@ -5,10 +5,9 @@ interface Props {
     image: string;
     title: string;
     content: string;
-    projectLink: string;
 }
 
-const { image, title, content, projectLink } = Astro.props;
+const { image, title, content } = Astro.props;
 ---
 
 <div class="my-card">
@@ -24,18 +23,7 @@ const { image, title, content, projectLink } = Astro.props;
     </div>
 
     <div class="p-3 pt-0">
-        <h3>{title}
-            <a href={projectLink} class="ms-3 img-a" target="_blank">
-                <Image
-                        src="/images/icons/link.svg"
-                        class="mb-2"
-                        alt="Link project"
-                        width="20"
-                        height="20"
-                />
-            </a>
-        </h3>
-
+        <h3>{title}</h3>
         <p>{content}</p>
     </div>
 </div>
