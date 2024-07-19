@@ -7,6 +7,7 @@ import TitleSection from "@src/components/TitleSection.astro";
 import Card from "@src/components/Card.astro";
 import CardLarge from "@src/components/CardLarge.astro";
 import CardSmall from "@src/components/CardSmall.astro";
+import { Image } from "astro:assets";
 import i18next, { t, changeLanguage } from "i18next";
 import { languages } from "../../i18n/ui";
 
@@ -21,7 +22,16 @@ changeLanguage("en");
         <div class="container-md">
             <div class="d-flex justify-content-end">
                 <div class="dropdown">
-                    <img src="/images/icons/globe.svg" id="languageDropdown"></img>
+                    <span id="languageDropdown">
+                        <Image
+                            src="/images/icons/globe.svg"
+                            width="20"
+                            height="20"
+                            class="me-2"
+                            alt="Language"
+                        />
+                        Language
+                    </span>
                     <ul class="dropdown-menu">
                         {
                             Object.keys(languages).map(key => {
@@ -172,8 +182,14 @@ changeLanguage("en");
         font-size: calc(1.8rem + 1.5vw);
     }
 
+    #languageDropdown {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+    }
+
     .dropdown-menu {
-        right: 10%;
+        right: 0;
         padding-left: 10px;
         padding-right: 10px;
     }
