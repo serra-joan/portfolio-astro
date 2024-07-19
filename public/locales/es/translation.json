@@ -1,0 +1,40 @@
+{
+  "metas": {
+    "title": "Joan Serra - Freelance",
+    "description": "Desarrollador web Freelance - Full Stack"
+  },
+
+  "headLine": {
+    "subtitle": "Desarrollador Web Freelance",
+    "content": "Con un enfoque práctico y eficiente. Mi trabajo se centra en construir sitios web funcionales y bien estructurados. Priorizo la claridad y la eficiencia en cada proyecto, asegurando resultados sólidos y profesionales."
+  },
+
+  "index": {
+    "experience": {
+      "title": "Experiencia",
+      "devinet": {
+        "title": "Devient",
+        "content": "Mi enfoque se centraba en presentar y ejecutar soluciones que impactaran positivamente en los usuarios, siempre trabajando en estrecha colaboración con los clientes para asegurar que sus necesidades y expectativas fueran cumplidas a la perfección."
+      },
+      "isWolk": {
+        "title": "isWolk",
+        "content": "Desempeñé un papel crucial ayudando a mantener diversas páginas web, garantizando su óptimo funcionamiento y adaptándolas a las necesidades cambiantes."
+      }
+    },
+
+    "projects": {
+      "title": "Proyectos",
+
+      "MASRealEstate": {
+        "title": "MÁS Real Estate",
+        "content": "Web dedicada al alquiler, compra e inversión de viviendas de lujo. También cuenta con una interfaz administrativa para gestionar el contenido de la web de manera eficiente y dinámica."
+      }
+    },
+
+    "knowledge": {
+      "title": "Conocimientos"
+    }
+
+  }
+
+}

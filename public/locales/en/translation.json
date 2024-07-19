@@ -1,0 +1,40 @@
+{
+  "metas": {
+    "title": "Joan Serra - Freelance",
+    "description": "Freelance Web Developer - Full Stack"
+  },
+
+  "headLine": {
+    "subtitle": "Freelance Web Developer",
+    "content": "With a practical and efficient approach. My work focuses on building functional and well-structured websites. I prioritize clarity and efficiency in every project, ensuring solid and professional results."
+  },
+
+  "index": {
+    "experience": {
+      "title": "Experience",
+      "devinet": {
+        "title": "Devient",
+        "content": "My focus was on presenting and executing solutions that positively impacted users, always working closely with clients to ensure their needs and expectations were perfectly met."
+      },
+      "isWolk": {
+        "title": "isWolk",
+        "content": "I played a crucial role in helping maintain various websites, ensuring their optimal performance and adapting them to changing needs."
+      }
+    },
+
+    "projects": {
+      "title": "Projects",
+
+      "MASRealEstate": {
+        "title": "MÁS Real Estate",
+        "content": "Website dedicated to the rental, purchase, and investment of luxury homes. It also has an administrative interface to efficiently and dynamically manage the website's content."
+      }
+    },
+
+    "knowledge": {
+      "title": "Knowledge"
+    }
+
+  }
+
+}
