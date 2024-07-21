@@ -10,19 +10,19 @@
 
   "headLine": {
     "subtitle": "Freelance Web Developer",
-    "content": "With a practical and efficient approach. Building functional and efficient websites."
+    "content": "With a practical and efficient approach. Functional and efficient websites."
   },
 
   "index": {
     "experience": {
-      "title": "Experience",
+      "title": "Work experience",
       "devinet": {
         "title": "Devient",
-        "content": "My focus was on presenting and executing solutions that positively impacted users, always working closely with clients to ensure their needs and expectations were perfectly met."
+        "content": "My role was presenting solutions and resolving them according to user preferences, always working closely with clients to ensure their needs and expectations were perfectly met.",
       },
       "isWolk": {
         "title": "isWolk",
-        "content": "I played a crucial role in helping maintain various websites, ensuring their optimal performance and adapting them to changing needs."
+        "content": "I helped maintain various websites, ensuring their optimal performance as well as adapting them to their changing needs."
       }
     },
 
@@ -31,7 +31,7 @@
 
       "MASRealEstate": {
         "title": "MÁS Real Estate",
-        "content": "Website dedicated to the rental, purchase, and investment of luxury homes. It also has an administrative interface to efficiently and dynamically manage the website's content."
+        "content": "Website dedicated to the rental, purchase and investment of luxury properties. It also has an administrative interface that allows an easy and dynamic management of the website’s content. "
       }
     },
 
