@@ -1,6 +1,7 @@
 # Mi Portafolio
-
 Bienvenido a mi portafolio en línea. Esta web está dedicada a informar sobre mi experiencia y conocimientos, así como a presentar mis proyectos.
+
+[Link al portafolio](https://serrajoan.com)
 
 ## Proyectos
 
