@@ -1,6 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 import ContactIcons from "../components/ContactIcons.astro";
+
+interface Props {
+    subtitle: string,
+    content: string
+}
+const { subtitle, content } = Astro.props;
+
 ---
 
 <div class="container-md">
@@ -21,11 +28,8 @@ import ContactIcons from "../components/ContactIcons.astro";
 
             <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 mt-5">
                 <h1 class="font-size-h1-plus">Joan Serra</h1>
-                <h2>Desarrollador Web Freelance</h2>
-                <p>
-                    Con un enfoque práctico y eficiente. Mi trabajo se centra en construir sitios web funcionales y bien estructurados.
-                    Priorizo la claridad y la eficiencia en cada proyecto, asegurando resultados sólidos y profesionales.
-                </p>
+                <h2>{subtitle}</h2>
+                <p>{content}</p>
 
                 <ContactIcons />
             </div>
@@ -36,11 +40,8 @@ import ContactIcons from "../components/ContactIcons.astro";
         <div class="row align-items-center">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
                 <h1 class="font-size-h1-plus">Joan Serra</h1>
-                <h2>Desarrollador Web Freelance</h2>
-                <p>
-                    Con un enfoque práctico y eficiente. Mi trabajo se centra en construir sitios web funcionales y bien estructurados.
-                    Priorizo la claridad y la eficiencia en cada proyecto, asegurando resultados sólidos y profesionales.
-                </p>
+                <h2>{subtitle}</h2>
+                <p>{content}</p>
 
                 <ContactIcons />
             </div>
