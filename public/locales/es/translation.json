@@ -4,6 +4,10 @@
     "description": "Desarrollador web Freelance - Full Stack"
   },
 
+  "navbar" : {
+    "language": "Idioma"
+  },
+
   "headLine": {
     "subtitle": "Desarrollador Web Freelance",
     "content": "Con un enfoque práctico y eficiente. Construcción de sitios web funcionales y eficientes."

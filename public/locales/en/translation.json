@@ -4,6 +4,10 @@
     "description": "Freelance Web Developer - Full Stack"
   },
 
+  "navbar" : {
+    "language": "Language"
+  },
+
   "headLine": {
     "subtitle": "Freelance Web Developer",
     "content": "With a practical and efficient approach. Building functional and efficient websites."
